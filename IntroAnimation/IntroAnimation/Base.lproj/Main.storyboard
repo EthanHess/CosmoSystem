@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntroAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IAD-th-XCa">
+                                <rect key="frame" x="8" y="476" width="359" height="171"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VPB-GO-ldQ" appends="YES" id="b9u-Ja-kbj"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IAD-th-XCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HTE-T3-QkP"/>
+                            <constraint firstAttribute="bottom" secondItem="IAD-th-XCa" secondAttribute="bottom" constant="20" symbolic="YES" id="K0y-JV-Jmf"/>
+                            <constraint firstItem="IAD-th-XCa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="456" id="YWw-6V-iBD"/>
+                            <constraint firstItem="IAD-th-XCa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="mIN-bB-Wxv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VPB-GO-ldQ">
+                    <connections>
+                        <action selector="imageViewTapped:" destination="BYZ-38-t0r" id="cOR-nZ-qwW"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="138.98050974512745"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="qlb-9y-GLF">
+            <objects>
+                <viewController storyboardIdentifier="AMViewController" id="8L1-V2-n0N" customClass="AnimationViewController" customModule="IntroAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TIM-c0-jiK"/>
+                        <viewControllerLayoutGuide type="bottom" id="QSs-hD-UJH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yUf-7g-paM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4b-x8-7jo" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="16" y="21" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="4vj-U7-X7H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBD-OJ-7tg" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="137" y="20" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="xQi-sL-juS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLr-s7-dXS" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="259" y="20" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="tuU-eZ-UHs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fk-8B-SXM" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="16" y="140" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="GKT-dd-L6b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLg-GG-uqM" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="137" y="139" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="6rf-2c-oqB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AW8-Tu-evN" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="259" y="139" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="SAZ-Ag-92o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ela-1v-4nD" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="16" y="262" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="DrV-Pq-bku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV7-b1-ZEd" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="137" y="261" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="ytz-Uu-Cc6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfI-ji-PTC" customClass="PlanetButton" customModule="IntroAnimation" customModuleProvider="target">
+                                <rect key="frame" x="259" y="261" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="2rg-2d-crb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZ1-my-vmX">
+                                <rect key="frame" x="16" y="567" width="343" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.99537390470504761" green="0.15870961546897888" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="8L1-V2-n0N" eventType="touchUpInside" id="pVf-fO-URJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-sv-1Oh">
+                                <rect key="frame" x="16" y="120" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="662-m0-6Z8">
+                                <rect key="frame" x="137" y="120" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHM-fl-Qyi">
+                                <rect key="frame" x="259" y="120" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raY-FG-dAx">
+                                <rect key="frame" x="16" y="240" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjh-SF-SaJ">
+                                <rect key="frame" x="137" y="240" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gt6-tH-tGF">
+                                <rect key="frame" x="259" y="240" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqV-dU-G7m">
+                                <rect key="frame" x="16" y="363" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSC-Oi-rYi">
+                                <rect key="frame" x="137" y="363" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88t-SS-U7a">
+                                <rect key="frame" x="259" y="363" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="GZ1-my-vmX" id="Kjm-ed-SP3"/>
+                        <outletCollection property="planetButtonCollection" destination="M4b-x8-7jo" collectionClass="NSMutableArray" id="Hq9-zS-9lQ"/>
+                        <outletCollection property="planetButtonCollection" destination="BBD-OJ-7tg" collectionClass="NSMutableArray" id="cUU-r1-nXz"/>
+                        <outletCollection property="planetButtonCollection" destination="GLr-s7-dXS" collectionClass="NSMutableArray" id="jbV-la-RxE"/>
+                        <outletCollection property="planetButtonCollection" destination="3Fk-8B-SXM" collectionClass="NSMutableArray" id="320-d5-U2M"/>
+                        <outletCollection property="planetButtonCollection" destination="iLg-GG-uqM" collectionClass="NSMutableArray" id="d12-ru-6tz"/>
+                        <outletCollection property="planetButtonCollection" destination="AW8-Tu-evN" collectionClass="NSMutableArray" id="MNM-rP-Sf1"/>
+                        <outletCollection property="planetButtonCollection" destination="Ela-1v-4nD" collectionClass="NSMutableArray" id="IAO-u7-hgv"/>
+                        <outletCollection property="planetButtonCollection" destination="hV7-b1-ZEd" collectionClass="NSMutableArray" id="quq-Q2-rhK"/>
+                        <outletCollection property="planetButtonCollection" destination="qfI-ji-PTC" collectionClass="NSMutableArray" id="RHZ-WS-aBD"/>
+                        <outletCollection property="labelCollection" destination="fB7-sv-1Oh" collectionClass="NSMutableArray" id="cdP-OY-nmJ"/>
+                        <outletCollection property="labelCollection" destination="662-m0-6Z8" collectionClass="NSMutableArray" id="eKn-O0-pUJ"/>
+                        <outletCollection property="labelCollection" destination="KHM-fl-Qyi" collectionClass="NSMutableArray" id="RV7-cd-Q4q"/>
+                        <outletCollection property="labelCollection" destination="raY-FG-dAx" collectionClass="NSMutableArray" id="Zx2-aV-BtV"/>
+                        <outletCollection property="labelCollection" destination="Hjh-SF-SaJ" collectionClass="NSMutableArray" id="NCi-CD-bFF"/>
+                        <outletCollection property="labelCollection" destination="Gt6-tH-tGF" collectionClass="NSMutableArray" id="eYH-wx-tAW"/>
+                        <outletCollection property="labelCollection" destination="jqV-dU-G7m" collectionClass="NSMutableArray" id="bMM-ou-KXJ"/>
+                        <outletCollection property="labelCollection" destination="LSC-Oi-rYi" collectionClass="NSMutableArray" id="Bcm-yo-1D3"/>
+                        <outletCollection property="labelCollection" destination="88t-SS-U7a" collectionClass="NSMutableArray" id="NYs-hE-LvD"/>
+                        <segue destination="r9t-K2-3eJ" kind="show" identifier="checkOutPlanet" id="XUj-7b-oeG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiZ-TB-cxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653.60000000000002" y="139.880059970015"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="7Bl-py-kgp">
+            <objects>
+                <viewController id="nPh-ol-bbX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7j0-8P-Ntf"/>
+                        <viewControllerLayoutGuide type="bottom" id="h4M-BL-6XP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kyi-Bj-aqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photos" id="qqX-QW-dek"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7c-i0-QJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2841" y="473"/>
+        </scene>
+        <!--Statistics-->
+        <scene sceneID="Ygn-3N-qRB">
+            <objects>
+                <viewController id="HMP-J4-WgJ" customClass="PlanetDetailViewController" customModule="IntroAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HIb-Rq-aG9"/>
+                        <viewControllerLayoutGuide type="bottom" id="v95-kB-lRK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EXz-ad-dFx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Statistics" id="EWd-5V-lL7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ke0-Vw-Wdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2842" y="-252"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HAp-Fg-cPR">
+            <objects>
+                <navigationController id="r9t-K2-3eJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pnj-3b-PfE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BTy-dy-MQp" kind="relationship" relationship="rootViewController" id="Bgb-KV-ssF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q6C-SV-Eod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1345" y="139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="YLu-1b-FpG">
+            <objects>
+                <tabBarController id="BTy-dy-MQp" customClass="TabBarController" customModule="IntroAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ttx-dX-1Vp">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="RSz-vN-Tjx">
+                            <connections>
+                                <action selector="backTapped:" destination="BTy-dy-MQp" id="v2k-FR-PwI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zqZ-R8-oTS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HMP-J4-WgJ" kind="relationship" relationship="viewControllers" id="GVq-D3-cCT"/>
+                        <segue destination="nPh-ol-bbX" kind="relationship" relationship="viewControllers" id="vqx-9X-x1h"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UvB-Z2-Mbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034" y="140"/>
+        </scene>
+    </scenes>
+</document>
